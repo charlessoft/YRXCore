@@ -1,0 +1,20 @@
+CXXSOURCES=./main.cpp
+SOURCES=$(CXXSOURCES)
+GXX=cl
+CPPFLAGS=-I"F:\cq\YRXCore\log4cplus\log4cplusWrapper"
+LDFLAGS="advapi32.lib" /SUBSYSTEM:CONSOLE /LIBPATH:"F:\cq\YRXCore\log4cplus\log4cplusWrapper\win\vc10\Debug" /LIBPATH:"F:\cq\YRXCore\log4cplus\log4cplusWrapper\win\vc10"
+LIBS=log4cplusWrapper.lib log4cplusSD.lib
+LDFLAGS_REL="advapi32.lib" /SUBSYSTEM:CONSOLE /LIBPATH:"F:\cq\YRXCore\log4cplus\log4cplusWrapper\win\vc10\Release" /LIBPATH:"F:\cq\YRXCore\log4cplus\log4cplusWrapper\win\vc10"
+LIBS_REL=log4cplusWrapper.lib log4cplusS.lib
+debug: src_cpp
+	link /out:main.exe *.obj  $(LDFLAGS) $(LIBS)
+src_cpp:
+	$(GXX) -c $(SOURCES) $(CPPFLAGS)  /ZI /MTd  /incremental:yes /W3 /WX- /Od /Oy- /D "WIN32" /D "_CONSOLE" /Gm /EHsc /GS /Gd
+release: src_cpp_rel
+	link /out:main.exe *.obj  $(LDFLAGS_REL) $(LIBS_REL)
+src_cpp_rel:
+	$(GXX) -c $(SOURCES) $(CPPFLAGS)  /ZI /MT  /incremental:yes /W3 /WX- /Od /Oy- /D "WIN32" /D "_CONSOLE" /Gm /EHsc /GS /Gd
+clean:
+	del main.exe *.obj
+
+

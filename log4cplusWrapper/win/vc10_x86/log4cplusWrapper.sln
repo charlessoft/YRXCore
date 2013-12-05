@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "log4cplusWrapper", "log4cplusWrapper.vcxproj", "{58CC96F7-793F-48C4-AEEA-0455B31AB33C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testdemo", "testdemo\testdemo.vcxproj", "{70FB70B1-0D48-4CED-8D49-FB3271D141F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{58CC96F7-793F-48C4-AEEA-0455B31AB33C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{58CC96F7-793F-48C4-AEEA-0455B31AB33C}.Debug|Win32.Build.0 = Debug|Win32
+		{58CC96F7-793F-48C4-AEEA-0455B31AB33C}.Release|Win32.ActiveCfg = Release|Win32
+		{58CC96F7-793F-48C4-AEEA-0455B31AB33C}.Release|Win32.Build.0 = Release|Win32
+		{70FB70B1-0D48-4CED-8D49-FB3271D141F0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{70FB70B1-0D48-4CED-8D49-FB3271D141F0}.Debug|Win32.Build.0 = Debug|Win32
+		{70FB70B1-0D48-4CED-8D49-FB3271D141F0}.Release|Win32.ActiveCfg = Release|Win32
+		{70FB70B1-0D48-4CED-8D49-FB3271D141F0}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
